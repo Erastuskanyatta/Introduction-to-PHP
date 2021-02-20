@@ -180,6 +180,33 @@ Your are youth
 
 
 ### Commenting In PHP
+Commenting in PHP is done to enable the person reading the code understands it.
+ It reminds the owner of the code what each and every line of the code means and what he was thinking when he wrote the code incase he forgets in future. A commented line is not executed as a part of the program on the browser. 
+ In PHP, there several ways of commenting:
+
+ 1)Single line comment
+
+ This is a comment done on one single line.
+
+ Example:
+ <?php
+   //The work of the echo is to output data on the screen eg:
+   echo"The output is:";
+    #The above line have been commented.
+ ?>
+
+ In the above example the two lines have been commented out using single line comment.
+
+ 2)Multiple-line comments:
+ Here, large code are commented together using */ and /* symbols.
+
+Example:
+<?php
+
+ /* Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).*/
+?>
+
+
 
 
 
