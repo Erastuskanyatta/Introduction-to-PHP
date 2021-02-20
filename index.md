@@ -198,7 +198,7 @@ Commenting in PHP is done to enable the person reading the code understands it.
  In the above example the two lines have been commented out using single line comment.
 
  2)Multiple-line comments:
- Here, large code are commented together using */ and /* symbols.
+ Here, large code are commented together using /* and */ symbols.
 
 Example:
 <?php
