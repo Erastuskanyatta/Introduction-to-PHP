@@ -1,31 +1,32 @@
 ### GETTING STARTED WITH PHP
-PHP is a server programming language that allows developers create content that interact with the database. It is an acronym for Hypertext Preprocessor. PHP is mostly used for developing web based applications.
-PHP script are always executed on the server while the HTML result is sent back to the browse.
+PHP is a Web server programming language. It allows developers to create content that interacts with the database. PHP stands for Hypertext Preprocessor. PHP is used for developing web-based applications.
 
 
 ### Why PHP?
 The following are some benefits of PHP :
-- PHP is used in creating website. PHP has got framework like [YII 2](https://www.tutorialspoint.com/yii/index.htm),[Laravel](https://laravel.com/),[FuelPHP](https://fuelphp.com/)
- which developers use in creating website since they speed up the web development.
-- PHP is integrated with database like Maria database.
-- Easy for beginner's who want to study server side languages
-- PHP can create, open, read,and close files on the server.
-- PHP can add and modify data in a database.
-- It is free to download.
+- PHP is used in creating the website. The following  are PHP framework used to develop websites:
+- [YII 2](https://www.tutorialspoint.com/yii/index.htm),
+- [Laravel](https://laravel.com/)
+- [FuelPHP](https://fuelphp.com/)
+ which developers use in creating a website since they speed up the web development.
+- PHP is integrated with a database like Maria database.
+- Easy for beginner's who want to study server-side languages
+- PHP can create, open, read, and close files on the server.
+- PHP can add and change data in a database.
 - Using PHP you can restrict users from accessing some of your websites
 
 ### Prerequisites
-To start using PHP you must have the following in your machine:
-- PHP installed. .This will be downloaded as we install the Web server.
-- Web server like Xampp. Download Xampp[here](https://www.apachefriends.org/download.html) In this article we will be working with Ubuntu hence it is advisable that you download Xampp for linux. A folder ```opt/lampp``` will be created after your done with the installation.
+Before you start proceeding with this article, make sure you have:
+- PHP installed. This will be downloaded as we install the Web server.
+- Web server like Xampp. Download Xampp[here](https://www.apachefriends.org/download.html) . In this article, we will use Ubuntu. A folder ```opt/lampp``` will be created after your done with the installation.
 
 ### Creating PHP files
-Navigate in ```opt/lampp/htdocs``` and open this folder using terminal to create a PHP folder where we will have our PHP files. Use the command below to create a folder ``PHP`` 
+Navigate in ```opt/lampp/htdocs``` and open this folder using the terminal to create a PHP folder. where we will have our PHP files. Use the command below to create a folder ``PHP`` 
 
 ```bash
 $ sudo mkdir PHP
 ```
-To confirm that the folder ``PHP`` was created successfully type the following command:
+To confirm that the folder ``PHP`` was created type the following command:
 ```bash
 $ ls
 PHP 
@@ -34,7 +35,7 @@ To create a file ```index.php``` in ```/opt/lampp/htdocs/PHP``` type the followi
 ```bash
 sudo nano index.php
 ```
-To open the created file ```index.php``` using [Getit](https://wiki.gnome.org/Apps/Gedit) type the following command:
+To open the file ```index.php``` using [Getit](https://wiki.gnome.org/Apps/Gedit) type the following command:
 ```bash
 sudo gedit index.php
 ```
@@ -49,34 +50,33 @@ Example
 In the ```index.php```file that was created above enter the following code:
 ```html
 <html>
-  <body>
-    <h2>This is my first PHP code </h2>
+ <body>
+ <h2>This is my first PHP code </h2>
       <?php
        echo "Hello world!";
       ?>
-  <body>
+ <body>
 </html>
 ```
-The PHP file above contains HTML tags, and some PHP scripting code.
-A PHP function "echo" is used to output the text "Hello World!" on a web page.The work of echo statement is to output data to the screen.. 
+The PHP file above contains HTML tags and some PHP scripting code.
+The work of the echo statement is to output data to the screen. 
 
-To view the output of the above code, open http://localhost/PHP
-Here, PHP is the folder that we created that contains our files.
+To view the output of the above code, browse http://localhost/PHP using any browser. 
+Here, PHP is the folder that contains our files.
 
-You should have something similar to this image on your browser:
+You should have something like this image on your browser:
 ![php](helloworld.png)
 
 Congratulations! You have created your first PHP program.
 
 ### PHP Conditional statement
-Condition Statements are used to perform different types of actions depending on the condition assigned. 
-The following conditional statements are found in PHP:
+Condition Statements are used to perform different types of actions.
+In PHP we have the following conditional statements :
 
-- if statement - some code are executed if one condition is true
+- if statement - This statement executes some code  if one condition is true
+- if...else statement -  This statement executes some code if a condition is true. It also executes another code if the condition is false.
 
-- if...else statement - If one condition is true some code is executed and also if the condition is false some code are also executed.
-
-- if...elseif...else statement - In this statement many codes are executed for more than one condition
+- if...else if...else statement - In this statement many codes are executed for more than one condition
 
 Lets us look at each statement at a time:
 
@@ -86,7 +86,7 @@ syntax
 
 ```php
 <?php
-  if(condition){
+ if(condition){
       echo"Code to be executed only if the condition is true";
   }  
 ?>
@@ -95,7 +95,7 @@ Let's look at each line above:
 
 if(condition) -This is where we will put our condition that the code will follow so that it can get executed.
 
-echo"Code to be executed only if the condition is true"; - The output to be executed is located here. This part is always inside the carrybraces.
+echo"Code to be executed only if the condition is true"; - The output to be executed is located here. This part is always inside the carry braces.
 
 Example:
 
@@ -108,12 +108,12 @@ if ($age < "18") {
 ?>
 The output here should be ;
 ```
-your are a kid!!
+you are a kid!!
 ```
 From the above example we have:
-- $age = 15; - variable $age is defined and a value 15 is assigned to it. 
+- $age = 15; - variable $age is defined and a value 15 is assigned to it. Variables start with the $sign followed by the name of the variable.
 - if ($age < "18")- this the condition to be followed.
-- echo "your are a kid!"- this will be the output if the condition is true
+- echo "you are a kid!"- this will be the output if the condition is true
 
 2) if...else statement 
 
@@ -138,11 +138,11 @@ else{
 ?>
 The output should be:
 ```
-Your are a youth
+You are a youth
 ```
-This is because the age is not less than 18. However if we assign a value like 17 to variable $age the output should be,
+This is because the age is not less than 18. But, if we assign a value like 17 to variable $age the output should be,
 ```
-your are a child
+you are a child
 ``` 
 3) if...elseif...else statement
 
@@ -175,13 +175,14 @@ echo"Your are youth";
 
 Since the $age = 18 the output of the following code should be:
 ```
-Your are youth 
+You are youth 
 ``` 
+
 
 
 ### Commenting In PHP
 Commenting in PHP is done to enable the person reading the code understands it.
- It reminds the owner of the code what each and every line of the code means and what he was thinking when he wrote the code incase he forgets in future. A commented line is not executed as a part of the program on the browser. 
+ It reminds the owner of the code what every line of the code means and what he was thinking when he wrote the code. A commented line is not executed as a part of the program on the browser. 
  In PHP, there several ways of commenting:
 
  1)Single line comment
@@ -192,10 +193,10 @@ Commenting in PHP is done to enable the person reading the code understands it.
  <?php
    //The work of the echo is to output data on the screen eg:
    echo"The output is:";
-    #The above line have been commented.
+    #The above line has been commented.
  ?>
 
- In the above example the two lines have been commented out using single line comment.
+ In the above example, the two lines have been commented out using a single line comment.
 
  2)Multiple-line comments:
  Here, large code are commented together using /* and */ symbols.
@@ -203,12 +204,15 @@ Commenting in PHP is done to enable the person reading the code understands it.
 Example:
 <?php
 
- /* Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).*/
+ /* This is a multiple_line comment*/
 ?>
 
+### Conclusion
+This is what we have covered in this article:
+- Creating PHP files.
+- PHP syntax
+- Conditional statements
+- Commenting in PHP
 
-
-
-
-
+## Have  good PHP coding ahead
 
