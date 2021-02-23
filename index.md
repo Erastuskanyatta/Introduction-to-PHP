@@ -1,5 +1,6 @@
 ### GETTING STARTED WITH PHP
-PHP is a Web server programming language. It allows developers to create content that interacts with the database. PHP stands for Hypertext Preprocessor. PHP is used for developing web-based applications.
+PHP is a Web server programming language. It allows developers to create content that interacts with the database. PHP stands for Hypertext Preprocessor and it is used for developing web-based applications.
+
 
 
 ### Why PHP?
@@ -59,7 +60,7 @@ In the ```index.php```file that was created above enter the following code:
 </html>
 ```
 The PHP file above contains HTML tags and some PHP scripting code.
-The work of the echo statement is to output data to the screen. 
+The work of the echo statement is display output on the  screen. 
 
 To view the output of the above code, browse http://localhost/PHP using any browser. 
 Here, PHP is the folder that contains our files.
@@ -71,10 +72,10 @@ Congratulations! You have created your first PHP program.
 
 ### PHP Conditional statement
 Condition Statements are used to perform different types of actions.
-In PHP we have the following conditional statements :
+Conditional statements in PHP include :
 
-- if statement - This statement executes some code  if one condition is true
-- if...else statement -  This statement executes some code if a condition is true. It also executes another code if the condition is false.
+- If statement - In this statement, if there is a true condition some code will be executed
+- if...else statement -  This statement executes either true or false code depending on the condition. This means that this statement contains two conditions.
 
 - if...else if...else statement - In this statement many codes are executed for more than one condition
 
@@ -111,7 +112,8 @@ The output here should be ;
 you are a kid!!
 ```
 From the above example we have:
-- $age = 15; - variable $age is defined and a value 15 is assigned to it. Variables start with the $sign followed by the name of the variable.
+- $age = 15; - variable $age is defined and a value 15 is assigned to it.
+In PHP, Variables are declared by first writing the $sigh followed by the name of the variable.
 - if ($age < "18")- this the condition to be followed.
 - echo "you are a kid!"- this will be the output if the condition is true
 
@@ -150,11 +152,12 @@ syntax
 
 <?php
 if (condition) {
-  code to be executed if this condition is true;
+if the condition is true this code will be executed;
 } elseif (condition) {
-  code to be executed if first condition is false and this condition is true;
+  this code is executed if the the 1st condition is false and this condition is true;
 } else {
-  code to be executed if all conditions are false;
+  this code is executed if the 1st and 2nd condition above are false;
+ 
 }
 ?>
 
