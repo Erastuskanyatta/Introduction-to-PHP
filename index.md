@@ -4,12 +4,12 @@ PHP is a Web server programming language. It allows developers to create content
 
 
 ### Why PHP?
-The following are some benefits of PHP :
+The following the benefits of PHP :
 - PHP is used in creating the website. The following  are PHP framework used to develop websites:
-- [YII 2](https://www.tutorialspoint.com/yii/index.htm),
-- [Laravel](https://laravel.com/)
-- [FuelPHP](https://fuelphp.com/)
- which developers use in creating a website since they speed up the web development.
+ 1) [YII 2](https://www.tutorialspoint.com/yii/index.htm),
+ 2) [Laravel](https://laravel.com/)
+ 3) [FuelPHP](https://fuelphp.com/)
+ <!-- which developers use in creating a website since they speed up the web development. -->
 - PHP is integrated with a database like Maria database.
 - Easy for beginner's who want to study server-side languages
 - PHP can create, open, read, and close files on the server.
