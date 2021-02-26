@@ -1,14 +1,14 @@
 ### GETTING STARTED WITH PHP
-[PHP](stuff-here) (Hypertext Pre-processor) is a web server-side programming language. It allows developers to create web applications that interact with a database.
+[PHP](https://www.php.net/) (Hypertext Pre-processor) is a web server-side programming language. It allows developers to create web applications that interact with a database.
 
 ### Why PHP?
 PHP can be used to do many things. Let us look at some examples of how PHP is used:
 1. PHP is platform-independent. This means that it runs on all operating systems. ie. Mac OS, Windows, or Linux.
 2. It can run on all modern servers eg. Apache
-3. PHP can be integrated with databases like [MariaDb]({}).
+3. PHP can be integrated with databases like [MariaDb](https://mariadb.org/).
 4. Easy to learn and put in place.
 5. PHP frameworks are used to build web applications. Here are some of the most popular PHP frameworks.
- 1. [Yii 2]({}) {}
+ 1. [Yii 2](https://www.yiiframework.com/) {}
  2. [Laravel](https://laravel.com/) {}
  3. [FuelPHP](https://fuelphp.com/) {}
  
