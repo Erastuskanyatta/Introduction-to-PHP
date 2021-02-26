@@ -54,6 +54,21 @@ You should see something like this image on your browser:
 
 Congratulations! You have written your first PHP program.
 ### Variables in PHP
+Variables in PHP are used to store information.
+
+The variable name cannot start with a number. Instead, they start with a letter or an underscore character.
+
+In PHP, Variables are created by first writing the $sigh followed by the name of the variable.
+
+Let us look at a simple implementation of variables in PHP:
+```php
+<?php
+$txt = "how old are you?";
+$x = 25;
+$y = 67;
+?>
+```
+In this code, `$txt` is a variable holding value `how old are you ', variable `$x` holds the value `25`, and variable `$y` holds the value `67`.
 
 ### Conditional statements in PHP
 Condition Statements can be used to perform different types of actions. They include :
@@ -64,7 +79,7 @@ This statement executes either true or false code depending on the condition. Th
 
 - `if... else if...else` statement - It is like the `if ...else` statement, but with the ability to check for many conditions.
 
-Let us implement each of the statement above:
+Let us put in place each of the statement above:
 
 ### 1. the `if` statement
 The syntax of an `if` statement looks like this.
@@ -73,7 +88,7 @@ if(condition){
  //code to execute
 }
 ```
-Let us implement this in a program.
+Let us put in place this in a program.
 ```php
 <?php
 $age = 15;
@@ -84,15 +99,7 @@ if ($age < 18) {
 ?>
 ```
 Running this code gives `a kid!` as the output.
-
-<!-- From the above example we have:
-- $age = 15; - variable $age is defined and a value 15 is assigned to it.
-In PHP, Variables are declared by first writing the $sigh followed by the name of the variable.
-- if (`$age < "18"`)- this the condition to be followed.
-- echo "you are a kid!"- this will be the output if the condition is true -->
-
-### 2. ````if...else```` statement 
-
+### 2. ````if...else```` statement
 syntax
 ```php
 if(condition){
@@ -159,13 +166,13 @@ This is a comment spanning a single line. Look at the example below.
 As shown above, you can use 2 backslashes (````//````) or a hashtag (```#```) for single-line comments. 
 
 ### 2. Multiple-line comment
-This is a comment spanning multiple lines. Here, you can use the symbols `/*` to open and `*/` to close the comment as shown below.
+This is a comment spanning many lines. Here, you can use the symbols `/*` to open and `*/` to close the comment as shown below.
 ```php
 <?php
  echo "hello!!"
  /*
   This is a comment,
-  that should span multiple lines
+  that should span many lines
   */
 ?>
 ```
