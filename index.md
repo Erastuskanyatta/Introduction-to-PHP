@@ -7,7 +7,7 @@ PHP can be used to do many things. Let us look at some examples of how PHP is us
 2. It can run on all modern servers eg. Apache
 3. PHP can be integrated with databases like [MariaDb](https://mariadb.org/).
 4. Easy to learn and put in place.
-5. PHP frameworks are used to build web applications. Here are some of the most popular PHP frameworks.
+5. PHP has frameworks that are used by web designer in building websites. Here are some of the most popular PHP frameworks.
  1. [Yii 2](https://www.yiiframework.com/) {}
  2. [Laravel](https://laravel.com/) {}
  3. [FuelPHP](https://fuelphp.com/) {}
@@ -24,7 +24,7 @@ $ cd /opt/lampp/htdocs
 $ sudo mkdir hello
 $ cd hello
 ```
-Then, create a new file ```index.php``` in ```/opt/lampp/htdocs/hello```. Run the following command in the terminal.
+Then, create a new file ```index.php``` in ```/opt/lampp/htdocs/hello``` using this command.
 ```bash
 $ sudo touch index.php
 ```
@@ -33,7 +33,7 @@ Then, open the file using [Gedit](https://wiki.gnome.org/Apps/Gedit) by running 
 $ sudo gedit index.php
 ```
 ### A hello world program
-We are going to write a simple PHP program.Let's look at the basic syntax of a PHP program. PHP code starts with `<?php` and ends with `?>` as shown below:
+We are going to write a simple PHP program.Let's look at the basic syntax of a PHP program. To write a PHP code, you must start with `<?php` and finish with `?>` as shown below:
 ```php
 <?php
 //php code is written here
@@ -54,11 +54,11 @@ You should see something like this image on your browser:
 
 Congratulations! You have written your first PHP program.
 ### Variables in PHP
-Variables in PHP are used to store information.
+Variables in PHP are used by programmers to give a certain value name so that they can use it as many time as possible.
 
-The variable name cannot start with a number. Instead, they start with a letter or an underscore character.
+When writing variables, always make sure to start with a letter or an underscore character  but **never** start a variable with a number.
 
-In PHP, Variables are created by first writing the $sigh followed by the name of the variable.
+In PHP, variables are created by first writing the dollar($)sigh. This is followed by giving a name to the variable created.
 
 Let us look at a simple implementation of variables in PHP:
 ```php
@@ -79,7 +79,7 @@ This statement executes either true or false code depending on the condition. Th
 
 - `if... else if...else` statement - It is like the `if ...else` statement, but with the ability to check for many conditions.
 
-Let us put in place each of the statement above:
+Let us implement each of the statement above:
 
 ### 1. the `if` statement
 The syntax of an `if` statement looks like this.
@@ -88,7 +88,7 @@ if(condition){
  //code to execute
 }
 ```
-Let us put in place this in a program.
+Let us implement this in a program.
 ```php
 <?php
 $age = 15;
@@ -166,13 +166,13 @@ This is a comment spanning a single line. Look at the example below.
 As shown above, you can use 2 backslashes (````//````) or a hashtag (```#```) for single-line comments. 
 
 ### 2. Multiple-line comment
-This is a comment spanning many lines. Here, you can use the symbols `/*` to open and `*/` to close the comment as shown below.
+This is a comment spanning multiple lines. Here, you can use the symbols `/*` to open and `*/` to close the comment as shown below.
 ```php
 <?php
  echo "hello!!"
  /*
   This is a comment,
-  that should span many lines
+  that should span multiple lines
   */
 ?>
 ```
