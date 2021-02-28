@@ -7,15 +7,27 @@ PHP can be used to do many things. Let us look at some examples of how PHP is us
 2. It can run on all modern servers eg. Apache
 3. PHP can be integrated with databases like [MariaDb](https://mariadb.org/).
 4. Easy to learn and put in place.
-5. PHP has frameworks that are used by a web designer in building websites. Here are some of the most popular PHP frameworks.
- 1. [Yii 2](https://www.yiiframework.com/). This generic PHP framework used for developing web applications with many ties
- 2. [Laravel](https://laravel.com/). This is an open-source MVC framework for PHP.
- 3. [FuelPHP](https://fuelphp.com/) . This is a PHP framework that supports data-oriented web applications
+5. PHP has frameworks that are used by a web designer in building websites. Here are some of the most popular PHP frameworks:
+
+    1. [Yii 2](https://www.yiiframework.com/). This is a generic PHP framework used for developing web applications with many ties.
+
+    2. [Laravel](https://laravel.com/).  This is a PHP framework designed for making web apps easier and faster for developers.
+
+   3. [FuelPHP](https://fuelphp.com/) . This is a PHP framework that supports data-oriented web applications
  
 ### Prerequisites
 Before you start this article, make sure you have  [Xampp](https://www.apachefriends.org). You can download Xampp [here](https://www.apachefriends.org/download.html). **In this article, we will use Ubuntu**. A folder ```/opt/lampp``` will be created after your done with the installation.
-{starting Xampp}
 
+After installation, you **must start** Xampp by running the following command:
+```bash
+$ sudo /opt/lampp/lampp start
+
+Starting XAMPP for Linux 7.4.10-0...
+XAMPP: Starting Apache...ok.
+XAMPP: Starting MySQL...ok.
+XAMPP: Starting ProFTPD...ok.
+
+```
 ### Creating PHP files
 Navigate to ```/opt/lampp/htdocs``` and create a new folder ```hello``` where we will have our PHP files. Open a terminal and run the command below.
 
@@ -39,7 +51,7 @@ We are going to write a simple PHP program. Let's look at the basic syntax of a 
 //php code is written here
 ?>
 ```
-In the ```index.php``` file you created above put the following code:
+In the ```index.php``` file you created above put the following code and save:
 ```php
 <?php
  echo "<h1>Hello world!</h1>";
@@ -68,10 +80,10 @@ $x = 25;
 $y = 67;
 ?>
 ```
-In this code, `$txt` is a variable holding value `how old are you ', variable `$x` holds the value `25`, and variable `$y` holds the value `67`.
+In this code, `$txt` is a variable holding value `how old are you?', variable `$x` holds the value `25`, and variable `$y` holds the value `67`.
 
 ### Conditional statements in PHP
-Condition Statements can be used to perform different types of actions. They include :
+Conditional statements are the actions performed if a certain condition is adhered to. They include :
 
 - `if` statement - used to execute some code if a given condition is true.
 - `if... else` statement -  the `if` block is used to execute some code if a certain condition is true. If the condition is false, then the `else` block executes another block of code.
@@ -82,7 +94,7 @@ This statement executes either true or false code depending on the condition. Th
 Let us put in place each of the statement above:
 
 ### 1. the `if` statement
-The syntax of an `if` statement looks like this.
+Below is a syntax for an `if` statement.
 ```php
 if(condition){
  //code to execute
